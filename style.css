@@ -1,0 +1,291 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+/*===== BASE =====*/
+
+:root {
+    --Gradient-1: hsl(6, 100%, 80%);
+    --Gradient-2: hsl(335, 100%, 65%);
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+    --Very-Dark-Blue-1: hsl(230, 55%, 17%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*==================== Mobile Screen ====================*/
+@media screen and (min-width:1440px) {
+    .data-storage-page {
+        background-image: url(./images/bg-desktop.png);
+        display: flex;
+        padding: 0px 20px;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-color: var(--Very-Dark-Blue);
+        background-position: center bottom;
+    }
+
+    .data-storage-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .data-storage-logo-icon {
+        background-color: var(--Dark-Blue);
+        width: 100%;
+        border-radius: 15px 60px 15px 15px;
+        padding: 30px;
+    }
+
+    .data-storage-icon {
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .img-background {
+        background: var(--Very-Dark-Blue);
+        padding: 12px;
+        display: flex;
+        align-items: center;
+        border-radius: 12px;
+
+    }
+
+    .data-storage-content {
+        margin-top: 20px;
+        background-color: var(--Dark-Blue);
+        width: 100%;
+        border-radius: 15px;
+        padding: 30px;
+        position: relative;
+        min-width: 150%;
+    }
+
+    .heading {
+        color: var(--Pale-Blue);
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    .font-bold {
+        font-weight: 700;
+    }
+
+    .data-storage-box-color {
+        background-color: var(--Very-Dark-Blue-1);
+        height: 20px;
+        width: 100%;
+        border-radius: 20px;
+        position: relative;
+    }
+
+    .data-storage-memory-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .data-storage-memory-content span{
+        color: #fff;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+
+    .data-storage-child-box-color {
+        background-image: linear-gradient(90deg, var(--Gradient-1), var(--Gradient-2));
+        height: 20px;
+        border: 3px solid var(--Very-Dark-Blue-1);
+        border-radius: 20px;
+        width: 75%;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .circle-icon {
+        background: #fff;
+        position: absolute;
+        left: 96%;
+        height: 10px;
+        width: 12px;
+        border-radius: 50%;
+    }
+
+    .data-storage-popup-content {
+        position: absolute;
+        left: 64%;
+        bottom: calc(60% + 30px);
+    }
+
+    .number {
+        position: relative;
+        width: auto;
+        background: #fff;
+        border-radius: 10px 10px 0 10px;
+        padding: 18px;
+        font-size: 30px;
+        font-weight: 900;
+        color: var(--Very-Dark-Blue);
+    }
+
+    .text{
+        font-weight: 500;
+        color: var(--Grayish-Blue);
+        font-size: 14px;
+    }
+
+    .number:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: auto;
+        width: 0;
+        height: 0;
+        border: 38px solid transparent;
+        border-top-color: #fff;
+        border-bottom: 0;
+        border-right: 0;
+        margin-left: -30px;
+        margin-bottom: -20px;
+    }
+}
+
+
+/*==================== Mobile Screen ====================*/
+@media screen and (max-width:375px) {
+    .data-storage-page {
+        background-image: url(./images/bg-mobile.png);
+        display: flex;
+        padding: 0px 20px;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .data-storage-logo-icon {
+        background-color: var(--Dark-Blue);
+        width: 100%;
+        border-radius: 15px 60px 15px 15px;
+        padding: 30px;
+    }
+
+    .data-storage-icon {
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .img-background {
+        background: var(--Very-Dark-Blue);
+        padding: 12px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .data-storage-content {
+        margin-top: 20px;
+        background-color: var(--Dark-Blue);
+        width: 100%;
+        border-radius: 15px;
+        padding: 30px;
+    }
+
+    .heading {
+        color: var(--Pale-Blue);
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    .font-bold {
+        font-weight: 700;
+    }
+
+    .data-storage-box-color {
+        background-color: var(--Very-Dark-Blue-1);
+        height: 20px;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .data-storage-memory-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .data-storage-memory-content span{
+        color: #fff;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+
+    .data-storage-child-box-color {
+        background-image: linear-gradient(90deg, var(--Gradient-1), var(--Gradient-2));
+        height: 20px;
+        border: 3px solid var(--Very-Dark-Blue-1);
+        border-radius: 20px;
+        width: 75%;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .circle-icon {
+        background: #fff;
+        position: absolute;
+        left: 93%;
+        height: 10px;
+        width: 12px;
+        border-radius: 50%;
+    }
+
+    .data-storage-popup-content {
+        margin-top: -35px;
+    }
+
+    .number {
+        color: var(--Very-Dark-Blue);
+        font-size: 35px;
+        font-weight: 900;
+        position: relative;
+        top: 65px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        right: 0px;
+        padding: 15px;
+        border-radius: 15px;
+        background: #fff;
+    }
+
+    .text {
+        color: var(--Grayish-Blue);
+        font-size: 14px;
+    }
+}
